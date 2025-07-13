@@ -1,0 +1,131 @@
+.programs-sec{
+    width: 100%;
+    /* background-color: rgb(87%,89%,95%); */
+    background-color: #fff;
+    /* height: 100vh; */
+    padding:  50px 100px;
+}
+.programs-sec .programs-upper  h1{
+    font-size: 60px;
+    color: rgb(171, 12, 47);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 30px;
+}
+.programs-sec .programs-upper h1:after{
+    content: '';
+    background: black;
+    width: 250px;
+    height: 5px;
+    display: block;
+    margin-left: 300px;
+}
+
+.programs-upper p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.programs-upper{
+   padding: 50px;
+}
+
+
+.slide-wraper{
+    /* border:2px solid red; */
+    overflow: hidden;
+    width: 100%;
+}
+
+
+.slide-wraper .program-center{
+    gap: 30px;
+    width: 100%;
+   padding: 0px;
+   display: flex;
+   transition: transform 0.5s ease;
+   /* flex: 33.33%; */
+   
+}
+
+.slide-wraper .program-center .card{
+    /* width: 350px; */
+     /* width: 300px; */
+     flex: 0 0 30.33%;
+    height: 500px;
+     border-radius: 5px;
+     padding: 10px;
+     background-color: #f6f4ee;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+     display:flex;
+     flex-direction: column;
+}
+
+.slider-wraper .program-center .card:hover {
+    box-shadow: none;
+    transition: .5s;
+}
+
+
+.slide-wraper .program-center .card:hover .img-box img{
+      transform: scale(1.1);
+      transition: .5s ease-in-out;
+}
+
+.slide-wraper .programs-upper .card img{
+   /* width: 100%; */
+}
+
+.slide-wraper .program-center .card h1{
+    font-size: 24px;
+    color: black;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.slide-wraper .program-center .card .text-sec{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ .slide-wraper .program-center .card .img-box{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    
+ }
+
+ .slide-wraper .program-center .card .text-sec p{
+     line-height: 26px;
+     color: gray;
+     font-size: 16px;
+}
+
+.slide-wraper .program-center .card .icon{
+     display: flex;
+     gap: 20px;
+}
+
+
+.slide-wraper .program-center  .card .btn{
+    background-color: #fff;
+   padding: 20px;
+   color: #AB0C2F;
+   font-weight: 500;
+
+   transition: .6s ease;
+}
+.program-center .card .btn:hover{
+    background-color: #AB0C2F;
+    color: #fff;
+}
+
+
+.program-lower h1{
+    text-align: center;
+    margin-top: 50px;
+}

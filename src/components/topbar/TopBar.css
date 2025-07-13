@@ -1,0 +1,33 @@
+.topbar{
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    justify-content: space-between;
+    background-color: #ab0c2f;
+}
+.topbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+    font-size: 18px;
+
+    cursor: pointer;
+    transition: color 0.3s ease;
+    border-right: 1px solid rgb(182, 181, 181);
+}
+.topbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    padding-right: 10px;
+}
+.topbar ul li a:hover{
+    color: #d7d2d3;
+}
+
+

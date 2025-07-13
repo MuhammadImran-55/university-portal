@@ -1,0 +1,78 @@
+.footer{
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+     gap: 80px;
+}
+
+
+.footer .first .f-logo{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.footer .first p{
+    color: grey;
+    width: 300px;
+    margin: 20px 0;
+}
+
+
+.footer .first  .f-h-2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.footer .first .f-h-2 span{
+    font-size: 15px;
+}
+.second .s-h1{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.second h2{
+    margin: 10px 0;
+}
+
+.third .t-h1{
+    font-size: 30px;
+    margin: 20px 0;
+}
+.third h2{
+    margin : 20px;
+
+}
+
+.f-news{
+    font-size: 24px;
+    margin: 20px 0;
+
+}
+
+.input{
+    box-shadow: 1px 1px 3px black;
+    padding: 4px 4px;
+    border-radius: 5px;
+    width: 280px;
+}
+.input:focus{
+     border: 1px solid red;
+}
+
+.input input{
+    padding: 5px 0 5px 8px;
+    outline: none;
+    font-size: 16px;
+    
+    width: 70%;
+   
+}
+ input:focus .input{
+    border: 1px solid #ab0c2f;
+}
+
+.input button{
+    background: #ab0c2f;
+    padding: 14px 16px;
+    color: white;
+    border-radius: 5px;
+}

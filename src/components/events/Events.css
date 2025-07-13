@@ -1,0 +1,83 @@
+.events-sec{
+    padding: 100px;
+
+}
+.upper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.events-sec .upper h1{
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.events-sec .upper button{
+    color: #fff;
+    border-radius: 5px;
+    padding: 24px 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #AB0C2F;
+}
+.events-sec .upper button:hover{
+    background-color: #AB0c2F;
+    cursor: pointer;
+}
+
+.events-sec .upper button:hover .moveRight{
+    transform: translateX(5px);
+    transition: all 0.3s ease-in-out;
+}
+.events-sec .upper img{
+    position: absolute;
+    top: 146px;
+    left: 40%;
+}
+
+
+.events-sec .lower{
+    padding: 100px 0 0 0;
+}
+.event-card{
+    border-top: 1px solid grey;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+
+
+}
+
+.lower .event-card:last-child{
+    border-bottom: 1px solid grey;
+}
+
+
+.lower .event-card h1:first-child{
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    color: #AB0C2F
+}
+
+.lower .event-card h1:nth-child(2){
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lower .event-card h1 span{
+    font-size: 20px;
+    color: grey; 
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.lower .event-card:hover .moveRight{
+    transform: translateX(5px);
+    transition: all .3s ;
+    color: #AB0C2F;
+}

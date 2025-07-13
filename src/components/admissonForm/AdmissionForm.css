@@ -1,0 +1,32 @@
+.admision-form{
+    background: #F6F4EE;
+    padding:150px 100px;
+}
+
+.a-form{
+    background: white;
+    width: 100%;
+    /* height: 200vh; */
+    border-radius: 5px;
+    margin: 80px 0;
+    padding: 100px;
+}
+
+.input-field{
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: 10px 0px;
+}
+
+label{
+    font-size: 20px;
+    
+}
+
+div input{
+    border: 1px solid #edeef3;
+    /* width: 100%; */
+    padding: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+}

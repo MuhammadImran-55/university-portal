@@ -1,0 +1,247 @@
+.testimonials{
+    width: 100%;
+    height: 94vh;
+    background-image: url('../../assets/images/testimonial-bg-2.jpg');
+     background-size: cover;
+     background-position: center;
+    position: relative;
+}
+
+.testimonials .bg-2{
+    width: 7%;
+    height: 100%;
+    background-image: url('../../assets/images/services-bg.jpg');
+    /* position: absolute;
+    right: 0; */
+float : right;
+
+}
+
+.testimonials .t-img{
+    position : absolute;
+}
+.testimonials img:nth-child(2){
+    right: 7%;
+    top: 20%; 
+    animation: scale 5s ease-in-out infinite;
+}
+.testimonials img:nth-child(3){
+    right: 9%;
+    top: 5%; 
+    animation: translate 6s ease-in-out infinite;
+
+}
+
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    25%
+    {
+        transform: rotate(0deg);
+   
+    }
+    35%
+    {
+        transform : rotate(180deg);
+        
+    }
+    50%
+    {
+  
+        transform: scale(1.5);
+    }
+    60%
+    {
+  
+        transform: rotate(360deg);
+    }
+    80%{
+    
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+
+
+@keyframes translate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(100px);
+        
+    }
+    100%{
+        transform: translateY(0px);
+        
+    }
+}
+
+
+.slider-container{
+    width: 60%;
+    height: 90%; 
+    background: #fff;
+   position: absolute;
+   right: 12%;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slider-container h1{
+    font-size: 50px;
+    color: black;
+    font-weight: 500;
+    margin-right: 240px;
+
+}
+
+.testimonials .slider-container .commas{
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+
+.test-slide-container{
+    /* border: 3px solid red; */
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonials .slider-container .slider{
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+     padding: 30px 20px;
+     gap: 10px;
+     display: flex;
+     flex-direction: column;
+      transition: 0.5s ease;
+}
+
+.testimonials .slider-container .test-slide-container .slider .slide-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+
+.slider-container .slider p{
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+    color: grey;
+}
+
+.slider-container .slider h2{
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;   
+    font-weight: 500;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.slider-container .slider h2 span{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    color: grey;
+}
+
+
+
+
+.arrow-box{
+    display: flex;
+    margin-top: 10px;
+    gap: 20px;
+    float: right;
+    margin-right: 30px;
+}
+
+.arrow-box .arrow{
+    width: 42px;
+    height: 42px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.arrow-box .arrow:hover{
+    background-color: #AB0C2F;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+.video-btn{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    animation: sc 1s linear infinite;
+    animation-delay: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.video-btn::after{
+    content: '';
+    /* display:block; */
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation: big 1s linear infinite;
+    position: absolute;
+}
+
+
+@keyframes big {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: scale(1.8);
+        opacity: 0; 
+    }
+}
+
+@keyframes sc{
+    0%{
+        transform: scale(1);
+    }
+    
+    100%
+    {
+        transform: scale(1.07);
+    }
+    
+}

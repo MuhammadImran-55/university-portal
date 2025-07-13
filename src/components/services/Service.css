@@ -1,0 +1,190 @@
+.service-sec{
+    background-color: #ab0c2f;
+    height: 360px;
+    position: relative;
+
+    
+}
+
+.service-card-box{
+   z-index: 23;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: -25%;
+    left: 12%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service-card{
+ 
+    width: 250px;
+    height: 330px;
+
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .9s;
+    position: relative;
+}
+
+.service-card:hover{
+    transition: .4s;
+    color: #ab0c2f;
+}
+.service-card:hover .upper-sec{
+    height: 54%;
+    /* top: 5%; */
+    transform: translateY(6%);
+}
+.service-card:hover .upper-sec .card-circle{
+    transition: .4s;    
+    transform: scale(1.2);
+    /* transform: translateY(3%); */
+}
+
+
+.upper-sec{
+    transition: .4s ease;
+    z-index: 23;
+    width: 100%;
+    height: 60%;
+    background: #F6F4EE;
+    border-radius: 15px;
+    padding: 14% 18% 18% 18%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.service-card .card-img{
+    width: 54px;
+    padding-bottom: 14px;
+    /* height: 50px; */
+
+}
+
+.service-card:hover .card-img{
+    animation: movement .6s alternate;
+}
+
+@keyframes movement{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.service-card .upper-sec h2{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 8px solid #ab0c2f;
+    position: absolute;
+    bottom: -15%;
+    left: 37%;
+    /* transform: translateX(-50%); */
+}
+
+.service-card p{
+    color: #F6F4EE;
+    font-family: 'outfit';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 10%;
+    /* width: 70%; */
+}
+
+.service-sec .degree{
+    position: absolute;
+    top: 220px;
+    left: 80px;
+    width: 50px;
+}
+.service-sec .circles{
+    position: absolute;
+    top: -30px;
+    left: 130px;
+    width: 390px;
+    height: 320px;
+    border-radius: 50% 60% 50% 50%;
+    opacity: .3;
+    border: 1px solid white;
+}
+.service-sec .circles-2{
+    position: absolute;
+    top: -30px;
+    left: 220px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50%;
+    opacity: .3;
+    border: 1px solid white;
+}
+.service-sec .circles-3{
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% 50% 50% 50%;
+    opacity: .3;
+    border: 1px solid white;
+}
+.service-sec .circles-4{
+    position: absolute;
+    bottom: -170px;
+    right: -140px;
+    width: 370px;
+    height: 370px;
+    border-radius: 50% 50% 50% 50%;
+    opacity: .3;
+    border: 1px solid white;
+}
+.cir{
+    z-index: 9;
+}    
+
+
+
+.service-sec span{
+    position: absolute;
+     bottom: 16%;
+     left: 40%;
+     color: #c8c8c8;
+        font-size: 1.2rem;
+}
+.service-sec span a{
+  color: #fff;
+  font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: 3px solid rgb(162, 157, 157);
+    text-decoration: none;      
+}
+.service-sec span a:hover{
+
+    border-bottom: 3px solid #fff;
+    transition: .4s;
+}
