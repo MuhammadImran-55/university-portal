@@ -35,7 +35,7 @@ const Footer = () => {
             <h2 style={{width:'300px',margin:'20px 0'}}>Enter your E-mail and we will send you more information</h2>
             <div className="input">
 
-            <input type="text" /><button>submit</button>
+            <input type="text" placeholder='Enter your Email' /><button>submit</button>
             </div>
         </div>
 

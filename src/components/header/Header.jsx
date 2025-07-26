@@ -7,7 +7,7 @@ import SearchPage from '../search/SearchPage'
 import menuShape from '../../assets/images/menu-cta-shape.png'
 import menuShape2 from '../../assets/images/menu-shape-1.png'
 import menuShape3 from '../../assets/images/menu-shape-2.png'
-import AdmissionForm from '../admissonForm/AdmissionForm'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -46,8 +46,10 @@ const Header = () => {
         <ul>
           {
             data.map((item, index) => (
-              <div className="main-item" key={index}>
-                <li><a href="/"><img className='main-img' src={item.img} alt="" /><span>{item.title}</span></a></li>
+              <div className="main-item">
+                <li key={index}><a href={item.href}
+                target="_blank"
+        rel="noopener noreferrer"><img className='main-img' src={item.img} alt="" /><span>{item.title}</span></a></li>
               </div>
             ))
           }
@@ -59,7 +61,7 @@ const Header = () => {
       <div className="drop-2">
         <ul>
          <div>
-          <li><a href="">overview</a></li>
+          <li><Link to="/overview">overview</Link></li>
           <li><a href="">Under Graduate</a></li>
           <li><a href="">Graduate</a></li>
           <li><a href="">School</a></li>
@@ -172,8 +174,7 @@ const Header = () => {
         title="Search"/></span>
          {/* Sliding Search Page */}
       <SearchPage show={showSearch} onClose={() => setShowSearch(false)} />
-              <button onClick={()=> {<AdmissionForm/>;
-              }}>Apply Now</button>
+             <Link to='/login'> <button>Apply Now</button></Link>
             </div>  
     </div>
   )

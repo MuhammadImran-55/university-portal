@@ -1,9 +1,9 @@
-import { AlignJustify } from 'lucide-react'
+
 import React from 'react'
 
 const FooterBottom = () => {
   return (
-    <div style={styles.div} >&copy; University of Okara. All Rights Reserved.</div>
+    <div style={styles.div} >&copy; Learnix. All Rights Reserved.</div>
   )
 }
 

@@ -1,7 +1,7 @@
 import Home from './assets/images/home-1.png'
 import OnlineCourses from './assets/images/home-2.png'
-import GymPlans from './assets/images/home-3.png'
-import KidEducation from './assets/images/home-4.png'   
+import KidEducation from './assets/images/home-3.png'
+import GymPlans from './assets/images/home-4.png'   
 import School from './assets/images/home-5.png'
 import shop from './assets/images/shop.png'
 import ComingSoon from './assets/images/coming-soon.png'
@@ -75,35 +75,43 @@ export const courseCard = [
 export const data = [
   {
     img: Home,
-    title: 'University'
+    title: 'University',
+    href:"https://muhammadimran-55.github.io/university-portal/"
     },
   {
     img: OnlineCourses,
-    title: 'Online Courses'
+    title: 'Online Courses',
+    href:'https://muhammadimran-55.github.io/learning-management/'
     },
   {
     img: GymPlans,
-    title: 'Kids Education'
+    title: 'Gym Plans',
+    href:'https://muhammadimran-55.github.io/gym-website/'
     },
   {
     img: KidEducation,
-    title: 'Gym Plans'
+    title: 'Kids Education',
+    href:'https://muhammadimran-55.github.io/gym-website/'
     },
   {
     img: School,
-    title: 'School'
+    title: 'School',
+    href:'https://muhammadimran-55.github.io/gym-website/'
     },
   {
     img: shop,
-    title: 'Coming Soon'
+    title: 'Coming Soon',
+    href:'https://muhammadimran-55.github.io/gym-website/'
     },
   {
     img: ComingSoon,
-    title: 'Coming Soon'
+    title: 'Coming Soon',
+    href:'/https://muhammadimran-55.github.io/gym-website/'
     },
   {
     img: ComingSoon,
-    title: 'Coming Soon'
+    title: 'Coming Soon',
+    href:'/https://muhammadimran-55.github.io/gym-website/'
     }
 ];
 
