@@ -128,7 +128,7 @@ const Overview = () => {
         </div>
 
         <div className="m-[100px]   w-[80%] h-[400px] p-12 flex relative">
-          <div className="w-[200px] bg-amber-400 absolute h-[470px] -z-20 top-[10px] rounded-xl"></div>
+          <div className="w-[300px] left-0 bg-amber-400 absolute h-[470px] -z-20 top-[10px] rounded-xl"></div>
             <img src={oThree} alt="" className="h-[400px] w-[50%] rounded-2xl" />
           <div className="p-[60px] w-[50%]">
             <h1 className="text-black text-3xl font-bold mb-3">HOw to Apply</h1>

@@ -16,12 +16,16 @@ import AdmissionForm from './components/admissonForm/AdmissionForm'
 import Achivement from './components/achivement/Achivement'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Overview from './pages/Overview'
+import UnderGraduates from './pages/UnderGraduates'
+import Graduates from './pages/Graduates'
+import ComingSoon from './pages/ComingSoon'
+import Faculty from './pages/Faculty'
 
 
 const App = () => {
 
   const location=useLocation();
-   const hideLayoutRoutes=['/login','/overview'];
+   const hideLayoutRoutes=['/login','/overview','/undergraduates','/comingsoon','/faculty'];
    const shouldHideLayout=hideLayoutRoutes.includes(location.pathname);
 
   return(
@@ -29,6 +33,10 @@ const App = () => {
   <Routes>
      <Route path='/login' element={<AdmissionForm/>} />
      <Route path='/overview' element={<Overview/>} />
+     <Route path='/undergraduates' element={<UnderGraduates/>} />
+     <Route path='/graduates' element={<Graduates/>} />
+     <Route path='/comingsoon' element={<ComingSoon/>} />
+     <Route path='/faculty' element={<Faculty/>} />
   </Routes>
   {!shouldHideLayout && (
     <>

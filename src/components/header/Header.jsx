@@ -62,14 +62,14 @@ const Header = () => {
         <ul>
          <div>
           <li><Link to="/overview">overview</Link></li>
-          <li><a href="">Under Graduate</a></li>
-          <li><a href="">Graduate</a></li>
-          <li><a href="">School</a></li>
+          <li><Link to="/undergraduates">Under Graduate</Link></li>
+          <li><Link to="/graduates">Graduate</Link></li>
+          <li><Link to="/comingsoon">School</Link></li>
          </div>
          <div>
-          <li><a href="">Kid Education</a></li>
-          <li><a href="">off Campus Learning</a></li>
-          <li><a href="">Faculty</a></li>
+          <li><Link to="/comingsoon">Kid Education</Link></li>
+          <li><a href="https://muhammadimran-55.github.io/learning-management/">off Campus Learning</a></li>
+          <li><Link to="/faculty">Faculty</Link></li>
          </div>
         </ul>
          <div className="drop-2-bottom">
