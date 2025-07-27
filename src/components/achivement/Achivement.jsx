@@ -11,9 +11,6 @@ const Achivement = () => {
  const [count3, setCount3] = useState(0);
  const [count4, setCount4] = useState(0);
 
-   const func = ()=>{
-       
-   }
 
    useEffect(() => {
      const interval = setInterval(() => {
