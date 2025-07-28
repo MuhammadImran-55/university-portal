@@ -8,7 +8,7 @@ const Footer = () => {
     <>
     <div className='footer'>
         <div className="first">
-            <h1 className='f-logo'>Acadia</h1>
+            <h1 className='f-logo text-2xl text-bold'>Learnix</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, nostrum.</p>
             <h1 className='f-h-2'><span>Got Questions? Call us</span><br />+92 301 1574440</h1>
             <div style={{display:'flex',gap:'10px',fontSize:'18px'}}><MailCheck />mimran11600@gmail.com</div>

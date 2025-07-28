@@ -20,12 +20,14 @@ import UnderGraduates from './pages/UnderGraduates'
 import Graduates from './pages/Graduates'
 import ComingSoon from './pages/ComingSoon'
 import Faculty from './pages/Faculty'
+import HowToApply from './pages/HowToApply'
+import CampusLife from './pages/CampusLife'
 
 
 const App = () => {
 
   const location=useLocation();
-   const hideLayoutRoutes=['/login','/overview','/undergraduates','/comingsoon','/faculty'];
+   const hideLayoutRoutes=['/login','/overview','/undergraduates','/graduates','/comingsoon','/faculty','/howtoapply','/campuslife'];
    const shouldHideLayout=hideLayoutRoutes.includes(location.pathname);
 
   return(
@@ -37,6 +39,8 @@ const App = () => {
      <Route path='/graduates' element={<Graduates/>} />
      <Route path='/comingsoon' element={<ComingSoon/>} />
      <Route path='/faculty' element={<Faculty/>} />
+     <Route path='/howtoapply' element={<HowToApply/>} />
+     <Route path='/campuslife' element={<CampusLife/>} />
   </Routes>
   {!shouldHideLayout && (
     <>

@@ -84,7 +84,7 @@ const Header = () => {
       <div className="drop-3">
         <ul>
           <li><a href="#">Overview</a></li>
-          <li><a href="#">How to Apply</a></li>
+          <li><Link to="/howtoapply">How to Apply</Link></li>
           <li><a href="#">Tuition&fees</a></li>
           <li><a href="#">Financial Aid</a></li>
           <li><a href="#">Date&Deadline</a></li>
