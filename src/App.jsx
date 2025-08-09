@@ -22,12 +22,15 @@ import ComingSoon from './pages/ComingSoon'
 import Faculty from './pages/Faculty'
 import HowToApply from './pages/HowToApply'
 import CampusLife from './pages/CampusLife'
+import Profile from './pages/Profile'
+import StudentDashboard from './pages/student/StudentDashboard'
+import StudentDash from './pages/StudentDash'
 
 
 const App = () => {
 
   const location=useLocation();
-   const hideLayoutRoutes=['/login','/overview','/undergraduates','/graduates','/comingsoon','/faculty','/howtoapply','/campuslife'];
+   const hideLayoutRoutes=['/login','/overview','/undergraduates','/graduates','/comingsoon','/faculty','/howtoapply','/campuslife','/studentDashboard'];
    const shouldHideLayout=hideLayoutRoutes.includes(location.pathname);
 
   return(
@@ -41,23 +44,25 @@ const App = () => {
      <Route path='/faculty' element={<Faculty/>} />
      <Route path='/howtoapply' element={<HowToApply/>} />
      <Route path='/campuslife' element={<CampusLife/>} />
+     <Route path='/studentDashboard' element={<StudentDashboard/>} />
   </Routes>
   {!shouldHideLayout && (
     <>
     <TopBar />
     <Header/>
-    <Hero/>
+    {/* <Hero/>
     <Service/>
     <MarqueeText/>
-    {/* <ImageSlider/> */}
     <About/>
     <Achivement/>
-    {/* <Counter  /> */}
     <Programs/>
     <Events/>
     <Testimonials/>
 
-    <Footer/>
+    <Footer/> */}
+    {/* <Profile/> */}
+    {/* <StudentDashboard/> */}
+    {/* <StudentDash/> */}
   </>
   )
 }

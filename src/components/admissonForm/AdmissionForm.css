@@ -30,3 +30,10 @@ div input{
     border-radius: 5px;
     margin: 10px 0;
 }
+div select{
+        border: 1px solid #edeef3;
+    /* width: 100%; */
+    padding: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
