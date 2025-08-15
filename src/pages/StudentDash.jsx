@@ -7,6 +7,7 @@ import {
   MessageSquare,
   Settings,
   LogOut,
+  School,
 } from "lucide-react";
 import { useState } from "react";
 import { ResponsiveContainer, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from "recharts";
@@ -44,24 +45,24 @@ export default function StudentDash() {
             <X />
           </button>
         </div>
-        <nav className="p-4 space-y-4 text-white font-medium">
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <Home size={18} /> Dashboard
+        <nav className="p-4 space-y-9 text-white font-medium">
+          <a href="#" className="flex items-center gap-2 text-2xl hover:text-gray-200">
+            <Home size={28} /> Dashboard
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <FileText size={18} /> Application
+          <a href="#" className="flex items-center gap-2 text-2xl hover:text-gray-200">
+            <FileText size={28} /> Application
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <BarChart size={18} /> Merit List
+          <a href="#" className="flex items-center gap-2 text-2xl hover:text-gray-200">
+            <BarChart size={28} /> Merit List
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <MessageSquare size={18} /> Messages
+          <a href="#" className="flex items-center gap-2 text-2xl hover:text-gray-200">
+            <MessageSquare size={28} /> Messages
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <Settings size={18} /> Settings
+          <a href="#" className="flex items-center gap-2 text-2xl hover:text-gray-200">
+            <Settings size={28} /> Settings
           </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <LogOut size={18} /> Logout
+          <a href="#" className="flex items-center gap-2 text-2xl hover:text-gray-200">
+            <School size={28} /> Semesters
           </a>
         </nav>
       </div>

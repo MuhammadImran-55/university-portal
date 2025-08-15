@@ -3,6 +3,7 @@ import './Programs.css'
 import img from '../../assets/images/home-2.png'
 import Tag from '../../assets/images/program-tag.svg'
 import { programCard } from '../../Data'
+import { ArrowLeft, ArrowRight } from 'lucide-react'
 
 
 
@@ -27,8 +28,8 @@ const Programs = () => {
             <h1>Academic <span style={{color:'black'}}> Programs</span></h1>
             <p>Focusing on high education with the best quality.</p>
         </div>
-          <button onClick={prev}>pre</button>
-          <button onClick={next}>next</button>
+          <button  className='bg-[#8d0000] rounded-full text-white p-3 mx-6 cursor-pointer' onClick={prev}><ArrowLeft /></button>
+          <button  className='bg-[#8d0000] rounded-full text-white p-3 cursor-pointer' onClick={next}><ArrowRight /></button>
          <div className='slide-wraper'>
         <div className="program-center" style={{transform: `translateX(-${currentIndex * 33}%)`}}>
             {

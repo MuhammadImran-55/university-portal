@@ -1,7 +1,5 @@
 import { Bell, Settings, LogOut } from "lucide-react";
-import Cgpa from "./Cgpa";
-import Attendence from "./Attendence";
-import RoomChecker from "./RoomChecker";
+
 import {
   Menu,
   X,
@@ -12,18 +10,14 @@ import {
   // Settings,
   // LogOut,
 } from "lucide-react";
-import { Link, Route, Routes } from "react-router-dom";
-import Profile from "../Profile";
+import { Link } from "react-router-dom";
+
 
 
 const StudentDashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100 font-sans">
-      <Routes>
-        <Route path="/profile" element={<Profile/>} />
-        <Route path="/attendence" element={<Attendence/>} />
-        <Route path="/cgpa" element={<Cgpa/>} />
-      </Routes>
+      
       {/* Sidebar */}
       <aside className="w-64 bg-[#8d0000] text-white flex flex-col py-6 px-4 shadow-md">
         <div className="text-center mb-8">
@@ -36,23 +30,23 @@ const StudentDashboard = () => {
           <p className="text-sm text-crimson-100">Student ID: 2025-CS-001</p>
         </div>
         <nav className="p-4 space-y-4 text-white font-medium">
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <Home size={18} /> Dashboard
+          <Link to="/" className="flex items-center text-xl gap-2 hover:text-gray-200">
+            <Home size={28} /> Dashboard
+          </Link>
+          <Link to="/profile" className="flex items-center text-xl gap-2 hover:text-gray-200">
+            <FileText size={28} /> profile
+          </Link>
+          <Link to="/attendence" className="flex items-center text-xl gap-2 hover:text-gray-200">
+            <BarChart size={28} /> attendance
+          </Link>
+          <Link to="/cgpa" className="flex items-center text-xl gap-2 hover:text-gray-200">
+            <MessageSquare size={28} /> CGPA
+          </Link>
+          <a href="#" className="flex items-center text-xl gap-2 hover:text-gray-200">
+            <LogOut size={28} /> semesters
           </a>
-          <Link to="/profile" className="flex items-center gap-2 hover:text-gray-200">
-            <FileText size={18} /> profile
-          </Link>
-          <Link to="/attendence" className="flex items-center gap-2 hover:text-gray-200">
-            <BarChart size={18} /> attendance
-          </Link>
-          <Link to="/cgpa" className="flex items-center gap-2 hover:text-gray-200">
-            <MessageSquare size={18} /> CGPA
-          </Link>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <Settings size={18} /> Settings
-          </a>
-          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
-            <LogOut size={18} /> Logout
+          <a href="#" className="flex items-center text-xl gap-2 hover:text-gray-200">
+            <Settings size={28} /> Settings
           </a>
         </nav>
         <button className="mt-6 flex items-center gap-2 px-4 py-2 hover:bg-crimson-700 rounded-md">
@@ -100,10 +94,6 @@ const StudentDashboard = () => {
             </ul>
           </div>
         </div>
-          <Profile/>
-          <Cgpa/>
-          <Attendence/>
-          <RoomChecker/>
       </main>
     </div>
   );

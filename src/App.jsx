@@ -50,7 +50,7 @@ const App = () => {
     <>
     <TopBar />
     <Header/>
-    {/* <Hero/>
+    <Hero/>
     <Service/>
     <MarqueeText/>
     <About/>
@@ -59,9 +59,9 @@ const App = () => {
     <Events/>
     <Testimonials/>
 
-    <Footer/> */}
+    <Footer/>
     {/* <Profile/> */}
-    {/* <StudentDashboard/> */}
+    <StudentDashboard/>
     {/* <StudentDash/> */}
   </>
   )
