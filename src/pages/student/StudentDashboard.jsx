@@ -2,10 +2,28 @@ import { Bell, Settings, LogOut } from "lucide-react";
 import Cgpa from "./Cgpa";
 import Attendence from "./Attendence";
 import RoomChecker from "./RoomChecker";
+import {
+  Menu,
+  X,
+  BarChart,
+  Home,
+  FileText,
+  MessageSquare,
+  // Settings,
+  // LogOut,
+} from "lucide-react";
+import { Link, Route, Routes } from "react-router-dom";
+import Profile from "../Profile";
+
 
 const StudentDashboard = () => {
   return (
     <div className="flex min-h-screen bg-gray-100 font-sans">
+      <Routes>
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/attendence" element={<Attendence/>} />
+        <Route path="/cgpa" element={<Cgpa/>} />
+      </Routes>
       {/* Sidebar */}
       <aside className="w-64 bg-[#8d0000] text-white flex flex-col py-6 px-4 shadow-md">
         <div className="text-center mb-8">
@@ -17,14 +35,25 @@ const StudentDashboard = () => {
           <h2 className="mt-4 text-xl font-semibold">Muhammad Imran</h2>
           <p className="text-sm text-crimson-100">Student ID: 2025-CS-001</p>
         </div>
-        <nav className="flex-1 space-y-4">
-          <a href="#" className="block py-2 px-4 rounded-md bg-black text-crimson font-semibold shadow">
-            Dashboard
+        <nav className="p-4 space-y-4 text-white font-medium">
+          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
+            <Home size={18} /> Dashboard
           </a>
-          <a href="#" className="block py-2 px-4 hover:bg-crimson-700 rounded-md">Application</a>
-          <a href="#" className="block py-2 px-4 hover:bg-crimson-700 rounded-md">Merit List</a>
-          <a href="#" className="block py-2 px-4 hover:bg-crimson-700 rounded-md">Messages</a>
-          <a href="#" className="block py-2 px-4 hover:bg-crimson-700 rounded-md">Settings</a>
+          <Link to="/profile" className="flex items-center gap-2 hover:text-gray-200">
+            <FileText size={18} /> profile
+          </Link>
+          <Link to="/attendence" className="flex items-center gap-2 hover:text-gray-200">
+            <BarChart size={18} /> attendance
+          </Link>
+          <Link to="/cgpa" className="flex items-center gap-2 hover:text-gray-200">
+            <MessageSquare size={18} /> CGPA
+          </Link>
+          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
+            <Settings size={18} /> Settings
+          </a>
+          <a href="#" className="flex items-center gap-2 hover:text-gray-200">
+            <LogOut size={18} /> Logout
+          </a>
         </nav>
         <button className="mt-6 flex items-center gap-2 px-4 py-2 hover:bg-crimson-700 rounded-md">
           <LogOut size={16} />
@@ -71,6 +100,7 @@ const StudentDashboard = () => {
             </ul>
           </div>
         </div>
+          <Profile/>
           <Cgpa/>
           <Attendence/>
           <RoomChecker/>
